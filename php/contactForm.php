@@ -3,9 +3,9 @@ $name  = $_REQUEST["name"];
 $email = $_REQUEST["email"];
 $subject = $_REQUEST["subject"];
 $msg   = $_REQUEST["msg"];
-$to    = "you@yourdomain.com"; // ENTER YOUR EMAIL ADDRESS
+$to    = "maaroufifouzi0@gmail.com"; // ENTER YOUR EMAIL ADDRESS
 if (isset($email) && isset($name) && isset($msg)) {
-    $email_subject = "This message was sent via YOUR SITE NAME"; // ENTER YOUR EMAIL SUBJECT
+    $email_subject = "wow pog championnn"; // ENTER YOUR EMAIL SUBJECT
 		$headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
 $headers .= "From: ".$name." <".$email.">\r\n"."Reply-To: ".$email."\r\n" ;
