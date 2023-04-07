@@ -1,8 +1,9 @@
 <?
-$name  = $_REQUEST["name"];
-$phone   = $_REQUEST["phone"];
-$date = $_REQUEST["date"];
-$treatment = $_REQUEST["treatment"];
+$name  = isset($_REQUEST["name"]) ? $_REQUEST["name"] : "";
+$phone   = isset($_REQUEST["phone"]) ? $_REQUEST["phone"] : "";
+$date = isset($_REQUEST["date"]) ? $_REQUEST["date"] : "";
+$treatment = isset($_REQUEST["treatment"]) ? $_REQUEST["treatment"] : "";
+$email = isset($_REQUEST["email"]) ? $_REQUEST["email"] : "";
 $to    = "maaroufifouzi0@gmail.com"; // ENTER YOUR EMAIL ADDRESS
 if (isset($email) && isset($name) && isset($phone)) {
     $email_subject = "$name sent you a message via YOUR SITE NAME"; // ENTER YOUR EMAIL SUBJECT
